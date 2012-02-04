@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBD73D9E14DDB9C100CB8C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD73D9D14DDB9C100CB8C0D /* UIKit.framework */; };
+		EBD73DA014DDB9C100CB8C0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD73D9F14DDB9C100CB8C0D /* Foundation.framework */; };
+		EBD73DA214DDB9C100CB8C0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD73DA114DDB9C100CB8C0D /* CoreGraphics.framework */; };
+		EBD73DA814DDB9C100CB8C0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBD73DA614DDB9C100CB8C0D /* InfoPlist.strings */; };
+		EBD73DAA14DDB9C200CB8C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD73DA914DDB9C200CB8C0D /* main.m */; };
+		EBD73DAE14DDB9C200CB8C0D /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD73DAD14DDB9C200CB8C0D /* SMAppDelegate.m */; };
+		EBD73DB114DDB9C200CB8C0D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD73DAF14DDB9C200CB8C0D /* MainStoryboard.storyboard */; };
+		EBD73DB414DDB9C200CB8C0D /* SMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD73DB314DDB9C200CB8C0D /* SMMasterViewController.m */; };
+		EBD73DB714DDB9C200CB8C0D /* SMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD73DB614DDB9C200CB8C0D /* SMDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EBD73D9914DDB9C100CB8C0D /* SchoolManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD73D9D14DDB9C100CB8C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EBD73D9F14DDB9C100CB8C0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBD73DA114DDB9C100CB8C0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EBD73DA514DDB9C100CB8C0D /* SchoolManager-Info.plist */ = {isa = PBXFileReference; path = "SchoolManager-Info.plist"; sourceTree = "<group>"; };
+		EBD73DA714DDB9C100CB8C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBD73DA914DDB9C200CB8C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBD73DAB14DDB9C200CB8C0D /* SchoolManager-Prefix.pch */ = {isa = PBXFileReference; path = "SchoolManager-Prefix.pch"; sourceTree = "<group>"; };
+		EBD73DAC14DDB9C200CB8C0D /* SMAppDelegate.h */ = {isa = PBXFileReference; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		EBD73DAD14DDB9C200CB8C0D /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		EBD73DB014DDB9C200CB8C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EBD73DB214DDB9C200CB8C0D /* SMMasterViewController.h */ = {isa = PBXFileReference; path = SMMasterViewController.h; sourceTree = "<group>"; };
+		EBD73DB314DDB9C200CB8C0D /* SMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMasterViewController.m; sourceTree = "<group>"; };
+		EBD73DB514DDB9C200CB8C0D /* SMDetailViewController.h */ = {isa = PBXFileReference; path = SMDetailViewController.h; sourceTree = "<group>"; };
+		EBD73DB614DDB9C200CB8C0D /* SMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBD73D9614DDB9C100CB8C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD73D9E14DDB9C100CB8C0D /* UIKit.framework in Frameworks */,
+				EBD73DA014DDB9C100CB8C0D /* Foundation.framework in Frameworks */,
+				EBD73DA214DDB9C100CB8C0D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBD73D8E14DDB9BF00CB8C0D = {
+			isa = PBXGroup;
+			children = (
+				EBD73DA314DDB9C100CB8C0D /* SchoolManager */,
+				EBD73D9C14DDB9C100CB8C0D /* Frameworks */,
+				EBD73D9A14DDB9C100CB8C0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD73D9A14DDB9C100CB8C0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBD73D9914DDB9C100CB8C0D /* SchoolManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD73D9C14DDB9C100CB8C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD73D9D14DDB9C100CB8C0D /* UIKit.framework */,
+				EBD73D9F14DDB9C100CB8C0D /* Foundation.framework */,
+				EBD73DA114DDB9C100CB8C0D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBD73DA314DDB9C100CB8C0D /* SchoolManager */ = {
+			isa = PBXGroup;
+			children = (
+				EBD73DAC14DDB9C200CB8C0D /* SMAppDelegate.h */,
+				EBD73DAD14DDB9C200CB8C0D /* SMAppDelegate.m */,
+				EBD73DAF14DDB9C200CB8C0D /* MainStoryboard.storyboard */,
+				EBD73DB214DDB9C200CB8C0D /* SMMasterViewController.h */,
+				EBD73DB314DDB9C200CB8C0D /* SMMasterViewController.m */,
+				EBD73DB514DDB9C200CB8C0D /* SMDetailViewController.h */,
+				EBD73DB614DDB9C200CB8C0D /* SMDetailViewController.m */,
+				EBD73DA414DDB9C100CB8C0D /* Supporting Files */,
+			);
+			path = SchoolManager;
+			sourceTree = "<group>";
+		};
+		EBD73DA414DDB9C100CB8C0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBD73DA514DDB9C100CB8C0D /* SchoolManager-Info.plist */,
+				EBD73DA614DDB9C100CB8C0D /* InfoPlist.strings */,
+				EBD73DA914DDB9C200CB8C0D /* main.m */,
+				EBD73DAB14DDB9C200CB8C0D /* SchoolManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD73D9814DDB9C100CB8C0D /* SchoolManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD73DBA14DDB9C200CB8C0D /* Build configuration list for PBXNativeTarget "SchoolManager" */;
+			buildPhases = (
+				EBD73D9514DDB9C100CB8C0D /* Sources */,
+				EBD73D9614DDB9C100CB8C0D /* Frameworks */,
+				EBD73D9714DDB9C100CB8C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchoolManager;
+			productName = SchoolManager;
+			productReference = EBD73D9914DDB9C100CB8C0D /* SchoolManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBD73D9014DDB9BF00CB8C0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = NASA;
+			};
+			buildConfigurationList = EBD73D9314DDB9BF00CB8C0D /* Build configuration list for PBXProject "SchoolManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EBD73D8E14DDB9BF00CB8C0D;
+			productRefGroup = EBD73D9A14DDB9C100CB8C0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD73D9814DDB9C100CB8C0D /* SchoolManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD73D9714DDB9C100CB8C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD73DA814DDB9C100CB8C0D /* InfoPlist.strings in Resources */,
+				EBD73DB114DDB9C200CB8C0D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD73D9514DDB9C100CB8C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD73DAA14DDB9C200CB8C0D /* main.m in Sources */,
+				EBD73DAE14DDB9C200CB8C0D /* SMAppDelegate.m in Sources */,
+				EBD73DB414DDB9C200CB8C0D /* SMMasterViewController.m in Sources */,
+				EBD73DB714DDB9C200CB8C0D /* SMDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBD73DA614DDB9C100CB8C0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD73DA714DDB9C100CB8C0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EBD73DAF14DDB9C200CB8C0D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD73DB014DDB9C200CB8C0D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBD73DB814DDB9C200CB8C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBD73DB914DDB9C200CB8C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBD73DBB14DDB9C200CB8C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchoolManager/SchoolManager-Prefix.pch";
+				INFOPLIST_FILE = "SchoolManager/SchoolManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EBD73DBC14DDB9C200CB8C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SchoolManager/SchoolManager-Prefix.pch";
+				INFOPLIST_FILE = "SchoolManager/SchoolManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBD73D9314DDB9BF00CB8C0D /* Build configuration list for PBXProject "SchoolManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD73DB814DDB9C200CB8C0D /* Debug */,
+				EBD73DB914DDB9C200CB8C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD73DBA14DDB9C200CB8C0D /* Build configuration list for PBXNativeTarget "SchoolManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD73DBB14DDB9C200CB8C0D /* Debug */,
+				EBD73DBC14DDB9C200CB8C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBD73D9014DDB9BF00CB8C0D /* Project object */;
+}
