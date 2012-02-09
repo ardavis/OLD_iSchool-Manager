@@ -13,8 +13,8 @@
 @property (nonatomic, copy)   NSString *title;
 @property (nonatomic, copy)   NSString *description;
 @property (nonatomic, strong) NSDate *due_date;
-@property (nonatomic)         BOOL *complete;
+//@property (nonatomic)         BOOL *complete;
 
-- (id) initWithTitle:(NSString *)title description:(NSSTring *)description due_date:(NSDate *)due_date;
+- (id) initWithTitle:(NSString *)title description:(NSString *)description due_date:(NSDate *)due_date;
 
 @end
