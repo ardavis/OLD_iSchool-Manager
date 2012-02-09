@@ -7,6 +7,8 @@
 //
 
 #import "SMAppDelegate.h"
+#import "CourseDataController.h"
+#import "SMMasterViewController.h"
 
 @implementation SMAppDelegate
 
@@ -14,7 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    
+    SMMasterViewController *firstViewController = (SMMasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    
+    CourseDataController *aDataController = [[CourseDataController alloc] init];
+    firstViewController.dataController = aDataController;
     return YES;
 }
 							

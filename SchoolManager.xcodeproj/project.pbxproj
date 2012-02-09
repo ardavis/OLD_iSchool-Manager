@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB675A6514E3070500FF229C /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = EB675A6414E3070500FF229C /* Course.m */; };
+		EB675A6914E3082D00FF229C /* CourseDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB675A6814E3082D00FF229C /* CourseDataController.m */; };
+		EBD15F7214E42FB000D46E52 /* ProjectDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD15F7114E42FB000D46E52 /* ProjectDescriptionViewController.m */; };
+		EBD15F7614E4320E00D46E52 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD15F7514E4320E00D46E52 /* Project.m */; };
+		EBD15F7914E4363400D46E52 /* ProjectDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD15F7814E4363400D46E52 /* ProjectDataController.m */; };
 		EBD73D9E14DDB9C100CB8C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD73D9D14DDB9C100CB8C0D /* UIKit.framework */; };
 		EBD73DA014DDB9C100CB8C0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD73D9F14DDB9C100CB8C0D /* Foundation.framework */; };
 		EBD73DA214DDB9C100CB8C0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD73DA114DDB9C100CB8C0D /* CoreGraphics.framework */; };
@@ -19,20 +24,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB675A6314E3070500FF229C /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		EB675A6414E3070500FF229C /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		EB675A6714E3082D00FF229C /* CourseDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDataController.h; sourceTree = "<group>"; };
+		EB675A6814E3082D00FF229C /* CourseDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDataController.m; sourceTree = "<group>"; };
+		EBD15F7014E42FB000D46E52 /* ProjectDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDescriptionViewController.h; sourceTree = "<group>"; };
+		EBD15F7114E42FB000D46E52 /* ProjectDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDescriptionViewController.m; sourceTree = "<group>"; };
+		EBD15F7414E4320E00D46E52 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		EBD15F7514E4320E00D46E52 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		EBD15F7714E4363400D46E52 /* ProjectDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataController.h; sourceTree = "<group>"; };
+		EBD15F7814E4363400D46E52 /* ProjectDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataController.m; sourceTree = "<group>"; };
 		EBD73D9914DDB9C100CB8C0D /* SchoolManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD73D9D14DDB9C100CB8C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EBD73D9F14DDB9C100CB8C0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBD73DA114DDB9C100CB8C0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EBD73DA514DDB9C100CB8C0D /* SchoolManager-Info.plist */ = {isa = PBXFileReference; path = "SchoolManager-Info.plist"; sourceTree = "<group>"; };
+		EBD73DA514DDB9C100CB8C0D /* SchoolManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SchoolManager-Info.plist"; sourceTree = "<group>"; };
 		EBD73DA714DDB9C100CB8C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBD73DA914DDB9C200CB8C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EBD73DAB14DDB9C200CB8C0D /* SchoolManager-Prefix.pch */ = {isa = PBXFileReference; path = "SchoolManager-Prefix.pch"; sourceTree = "<group>"; };
-		EBD73DAC14DDB9C200CB8C0D /* SMAppDelegate.h */ = {isa = PBXFileReference; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		EBD73DAB14DDB9C200CB8C0D /* SchoolManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SchoolManager-Prefix.pch"; sourceTree = "<group>"; };
+		EBD73DAC14DDB9C200CB8C0D /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
 		EBD73DAD14DDB9C200CB8C0D /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
 		EBD73DB014DDB9C200CB8C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		EBD73DB214DDB9C200CB8C0D /* SMMasterViewController.h */ = {isa = PBXFileReference; path = SMMasterViewController.h; sourceTree = "<group>"; };
+		EBD73DB214DDB9C200CB8C0D /* SMMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMasterViewController.h; sourceTree = "<group>"; };
 		EBD73DB314DDB9C200CB8C0D /* SMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMasterViewController.m; sourceTree = "<group>"; };
-		EBD73DB514DDB9C200CB8C0D /* SMDetailViewController.h */ = {isa = PBXFileReference; path = SMDetailViewController.h; sourceTree = "<group>"; };
+		EBD73DB514DDB9C200CB8C0D /* SMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMDetailViewController.h; sourceTree = "<group>"; };
 		EBD73DB614DDB9C200CB8C0D /* SMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,8 +98,18 @@
 				EBD73DAC14DDB9C200CB8C0D /* SMAppDelegate.h */,
 				EBD73DAD14DDB9C200CB8C0D /* SMAppDelegate.m */,
 				EBD73DAF14DDB9C200CB8C0D /* MainStoryboard.storyboard */,
+				EB675A6314E3070500FF229C /* Course.h */,
+				EB675A6414E3070500FF229C /* Course.m */,
+				EB675A6714E3082D00FF229C /* CourseDataController.h */,
+				EB675A6814E3082D00FF229C /* CourseDataController.m */,
 				EBD73DB214DDB9C200CB8C0D /* SMMasterViewController.h */,
 				EBD73DB314DDB9C200CB8C0D /* SMMasterViewController.m */,
+				EBD15F7014E42FB000D46E52 /* ProjectDescriptionViewController.h */,
+				EBD15F7414E4320E00D46E52 /* Project.h */,
+				EBD15F7714E4363400D46E52 /* ProjectDataController.h */,
+				EBD15F7814E4363400D46E52 /* ProjectDataController.m */,
+				EBD15F7514E4320E00D46E52 /* Project.m */,
+				EBD15F7114E42FB000D46E52 /* ProjectDescriptionViewController.m */,
 				EBD73DB514DDB9C200CB8C0D /* SMDetailViewController.h */,
 				EBD73DB614DDB9C200CB8C0D /* SMDetailViewController.m */,
 				EBD73DA414DDB9C100CB8C0D /* Supporting Files */,
@@ -130,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = NASA;
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = EBD73D9314DDB9BF00CB8C0D /* Build configuration list for PBXProject "SchoolManager" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -170,6 +195,11 @@
 				EBD73DAE14DDB9C200CB8C0D /* SMAppDelegate.m in Sources */,
 				EBD73DB414DDB9C200CB8C0D /* SMMasterViewController.m in Sources */,
 				EBD73DB714DDB9C200CB8C0D /* SMDetailViewController.m in Sources */,
+				EB675A6514E3070500FF229C /* Course.m in Sources */,
+				EB675A6914E3082D00FF229C /* CourseDataController.m in Sources */,
+				EBD15F7214E42FB000D46E52 /* ProjectDescriptionViewController.m in Sources */,
+				EBD15F7614E4320E00D46E52 /* Project.m in Sources */,
+				EBD15F7914E4363400D46E52 /* ProjectDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +311,7 @@
 				EBD73DBC14DDB9C200CB8C0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

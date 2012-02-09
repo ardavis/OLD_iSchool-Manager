@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Course;
+
 @interface SMDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Course *course;
+@property (weak, nonatomic) IBOutlet UILabel *courseNameLabel;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-
+@property (strong, nonatomic) IBOutlet UITableView *incompleteProjectsTableView;
+@property (strong, nonatomic) IBOutlet UITableView *completeProjectsTableView;
 @end

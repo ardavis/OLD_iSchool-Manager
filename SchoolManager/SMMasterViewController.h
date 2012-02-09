@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class CourseDataController;
+
 @interface SMMasterViewController : UITableViewController
+
+@property (nonatomic, retain) CourseDataController *dataController;
 
 @end
