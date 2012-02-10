@@ -16,6 +16,7 @@
 		EBCFF01F14E45CED00389E38 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCFF01E14E45CED00389E38 /* Security.framework */; };
 		EBCFF02114E45D0300389E38 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCFF02014E45D0300389E38 /* SystemConfiguration.framework */; };
 		EBCFF02314E45D1000389E38 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCFF02214E45D1000389E38 /* libxml2.dylib */; };
+		EBCFF02614E5593400389E38 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCFF02514E5593400389E38 /* AddCourseViewController.m */; };
 		EBD15F7214E42FB000D46E52 /* ProjectDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD15F7114E42FB000D46E52 /* ProjectDescriptionViewController.m */; };
 		EBD15F7614E4320E00D46E52 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD15F7514E4320E00D46E52 /* Project.m */; };
 		EBD15F7914E4363400D46E52 /* ProjectDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD15F7814E4363400D46E52 /* ProjectDataController.m */; };
@@ -80,6 +81,9 @@
 		EBCFF01E14E45CED00389E38 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EBCFF02014E45D0300389E38 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EBCFF02214E45D1000389E38 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EBCFF02414E5593400389E38 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		EBCFF02514E5593400389E38 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		EBCFF03514E578AE00389E38 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		EBD15F7014E42FB000D46E52 /* ProjectDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDescriptionViewController.h; sourceTree = "<group>"; };
 		EBD15F7114E42FB000D46E52 /* ProjectDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDescriptionViewController.m; sourceTree = "<group>"; };
 		EBD15F7414E4320E00D46E52 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
@@ -135,6 +139,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EBCFF03414E5786C00389E38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB675A6314E3070500FF229C /* Course.h */,
+				EB675A6414E3070500FF229C /* Course.m */,
+				EBD15F7414E4320E00D46E52 /* Project.h */,
+				EBD15F7514E4320E00D46E52 /* Project.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		EBD73D8E14DDB9BF00CB8C0D = {
 			isa = PBXGroup;
 			children = (
@@ -172,20 +187,20 @@
 		EBD73DA314DDB9C100CB8C0D /* SchoolManager */ = {
 			isa = PBXGroup;
 			children = (
+				EBCFF03514E578AE00389E38 /* Constants.h */,
+				EBCFF03414E5786C00389E38 /* Models */,
 				EBD73DAC14DDB9C200CB8C0D /* SMAppDelegate.h */,
 				EBD73DAD14DDB9C200CB8C0D /* SMAppDelegate.m */,
 				EBD73DAF14DDB9C200CB8C0D /* MainStoryboard.storyboard */,
-				EB675A6314E3070500FF229C /* Course.h */,
-				EB675A6414E3070500FF229C /* Course.m */,
+				EBCFF02414E5593400389E38 /* AddCourseViewController.h */,
+				EBCFF02514E5593400389E38 /* AddCourseViewController.m */,
 				EB675A6714E3082D00FF229C /* CourseDataController.h */,
 				EB675A6814E3082D00FF229C /* CourseDataController.m */,
 				EBD73DB214DDB9C200CB8C0D /* SMMasterViewController.h */,
 				EBD73DB314DDB9C200CB8C0D /* SMMasterViewController.m */,
 				EBD15F7014E42FB000D46E52 /* ProjectDescriptionViewController.h */,
-				EBD15F7414E4320E00D46E52 /* Project.h */,
 				EBD15F7714E4363400D46E52 /* ProjectDataController.h */,
 				EBD15F7814E4363400D46E52 /* ProjectDataController.m */,
-				EBD15F7514E4320E00D46E52 /* Project.m */,
 				EBD15F7114E42FB000D46E52 /* ProjectDescriptionViewController.m */,
 				EBD73DB514DDB9C200CB8C0D /* SMDetailViewController.h */,
 				EBD73DB614DDB9C200CB8C0D /* SMDetailViewController.m */,
@@ -315,6 +330,7 @@
 				EBD15F7214E42FB000D46E52 /* ProjectDescriptionViewController.m in Sources */,
 				EBD15F7614E4320E00D46E52 /* Project.m in Sources */,
 				EBD15F7914E4363400D46E52 /* ProjectDataController.m in Sources */,
+				EBCFF02614E5593400389E38 /* AddCourseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

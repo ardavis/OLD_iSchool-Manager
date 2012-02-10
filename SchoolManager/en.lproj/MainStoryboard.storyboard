@@ -22,7 +22,7 @@
         <scene sceneID="0i1-lW-wzd">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceB-so-ohl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Rah-Br-0XL" sceneMemberID="viewController">
+                <viewController id="Rah-Br-0XL" customClass="AddCourseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKl-7b-IXj">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -32,25 +32,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Rah-Br-0XL" id="H18-Mx-RmX"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CE-491" textAlignment="center" minimumFontSize="17" id="aau-Sx-wnj">
                                 <rect key="frame" x="90" y="167" width="140" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Rah-Br-0XL" id="zSH-lz-H2K"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Course Name" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="Gyt-i5-rSu">
                                 <rect key="frame" x="20" y="37" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="KcU-ig-Ob8">
-                                <rect key="frame" x="30" y="47" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Course Number" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="RAs-sr-bG1">
@@ -64,11 +63,24 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Course" id="czb-ls-qAE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="SRZ-YM-IV1"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TDI-2I-Mja">
+                            <connections>
+                                <action selector="cancel:" destination="Rah-Br-0XL" id="baV-0o-JWI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="SRZ-YM-IV1">
+                            <connections>
+                                <action selector="done:" destination="Rah-Br-0XL" id="e15-zS-9mi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="courseInputName" destination="V8S-6i-YAc" id="hTZ-th-YE1"/>
+                        <outlet property="courseInputNumber" destination="aau-Sx-wnj" id="6V9-de-R3b"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1041" y="-487"/>
+            <point key="canvasLocation" x="977" y="-617"/>
         </scene>
         <scene sceneID="18">
             <objects>
@@ -116,9 +128,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Courses" id="35">
-                        <barButtonItem key="rightBarButtonItem" title="New Course" id="Oq9-mw-T8m">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Oq9-mw-T8m">
                             <connections>
-                                <segue destination="Rah-Br-0XL" kind="push" id="Zcf-vi-Q3K"/>
+                                <segue destination="PEt-fs-xLf" kind="modal" identifier="ShowAddCourseView" id="3eL-sO-O0d"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -192,7 +204,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1685" y="-511"/>
+            <point key="canvasLocation" x="2211" y="-511"/>
         </scene>
         <scene sceneID="OsV-go-qO3">
             <objects>
@@ -349,8 +361,34 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="991" y="116"/>
         </scene>
+        <scene sceneID="w4f-rD-A9U">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSy-wG-t7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="PEt-fs-xLf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5pg-Yn-nKI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rah-Br-0XL" kind="relationship" relationship="rootViewController" id="UTv-64-Kbr"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="451" y="-617"/>
+        </scene>
     </scenes>
     <classes>
+        <class className="AddCourseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddCourseViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="courseInputName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="courseInputNumber" candidateClass="UITextField"/>
+            </relationships>
+        </class>
         <class className="ProjectDescriptionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProjectDescriptionViewController.h"/>
             <relationships>

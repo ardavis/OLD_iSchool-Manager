@@ -9,11 +9,34 @@
 #import "SMMasterViewController.h"
 #import "SMDetailViewController.h"
 #import "CourseDataController.h"
+#import "AddCourseViewController.h"
 #import "Course.h"
+
+@interface SMMasterViewController () <AddCourseViewControllerDelegate>
+@end
 
 @implementation SMMasterViewController
 
 @synthesize dataController = _dataController;
+
+- (void)addCourseViewControllerDidCancel:(AddCourseViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)addCourseViewControllerDidFinish:(AddCourseViewController *)controller name:(NSString *)name number:(NSString *)number
+{
+    if ([name length] || [number length])
+    {
+        [self.dataController addCourseWithName:name number:number];
+        
+        // Possibly create the remote Course here??
+        
+        [[self tableView] reloadData];
+    }
+    
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -42,6 +65,11 @@
         SMDetailViewController *detailViewController = [segue destinationViewController];
         
         detailViewController.course = [self.dataController objectInMasterCourseListAtIndex:[self.tableView indexPathForSelectedRow].row];
+    }
+    else if ([[segue identifier] isEqualToString:@"ShowAddCourseView"])
+    {
+        AddCourseViewController *addController = (AddCourseViewController *)[[[segue destinationViewController] viewControllers] objectAtIndex:0];
+        addController.delegate = self;
     }
 }
 

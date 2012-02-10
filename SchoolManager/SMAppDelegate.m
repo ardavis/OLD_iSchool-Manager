@@ -9,6 +9,7 @@
 #import "SMAppDelegate.h"
 #import "CourseDataController.h"
 #import "SMMasterViewController.h"
+#import "Course.h"
 
 @implementation SMAppDelegate
 
@@ -22,9 +23,37 @@
     
     CourseDataController *aDataController = [[CourseDataController alloc] init];
     firstViewController.dataController = aDataController;
+    
+    
+    RKClient* client = [RKClient clientWithBaseURL:@"http://school_manager.dev/"];
+    NSLog(@"I am your RKClient singleton : %@", [RKClient sharedClient]);
+    
     return YES;
 }
-							
+
+- (void)loadCourse {  
+    RKObjectManager* manager = [RKObjectManager objectManagerWithBaseURL:@"http://school_manager.dev/"];  
+    RKObjectMapping* mapping = [RKObjectMapping mappingForClass:[Course class]];
+    
+    [manager loadObjectsAtResourcePath:@"/users/23/courses/" objectMapping:mapping delegate:(id)self];
+    
+    // Define a default resource path for all unspecified HTTP verbs  
+    [manager.router routeClass:[Course class] toResourcePath:@"/contacts/(identifier)"];  
+    [manager.router routeClass:[Course class] toResourcePath:@"/courses" forMethod:RKRequestMethodPOST];  
+    
+} 
+
+// RKObjectLoaderDelegate methods  
+
+- (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {  
+    Course* course = [objects objectAtIndex:0];  
+    NSLog(@"Loaded Course ID #%@ -> Name: %@, Number: %@", course.identifier, course.name, course.number);  
+}  
+
+- (void)objectLoader:(RKObjectLoader*)objectLoader didFailWithError:(NSError*)error {  
+    NSLog(@"Encountered an error: %@", error);  
+} 
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*

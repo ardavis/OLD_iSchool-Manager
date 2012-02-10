@@ -8,6 +8,7 @@
 
 #import "CourseDataController.h"
 #import "Course.h"
+#import "RestKit/RestKit.h"
 
 @interface CourseDataController ()
 
@@ -54,11 +55,16 @@
     myCourse = [[Course alloc] initWithName:inputCourseName number:inputCourseNumber];
     
     [self.masterCourseList addObject:myCourse];
+    
+    // Put the course on the server
+    [[RKObjectManager sharedManager] postObject:myCourse delegate:(id)self];
 }
 
 - (void)initializeDefaultDataList
 {
     self.masterCourseList = [[NSMutableArray alloc] init];
+    
+    // Get all courses from the server HERE!
     
     [self addCourseWithName:@"Mobile App Development" number:@"CE-491"];
 }

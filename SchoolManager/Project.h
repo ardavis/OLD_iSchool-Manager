@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
 
-@interface Project : NSObject
+@interface Project : NSObject <RKRequestDelegate> {
+    NSNumber* _identifier;
+    NSString* _title;
+    NSString* _description;
+}
 
 @property (nonatomic, copy)   NSString *title;
 @property (nonatomic, copy)   NSString *description;
